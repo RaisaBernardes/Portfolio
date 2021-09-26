@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Poppins:wght@300;400&family=Source+Serif+Pro:wght@300;400&display=swap');
+
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x:hidden;
+    overflow-y: hidden;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+img {width: 100%;}
+
+.nav-container {
+    background-color: #161616;
+
+    a{
+        color: white;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+
+    .logo {
+        color: white;
+        font-weight: bold;
+        font-family: 'Poppins';
+    }
+
+    ul {
+        display: flex;
+
+        a {
+            /*Isso é para o espaçamento entre as palavras do menu darem certo*/
+            display: block; 
+            padding: 0 1em;
+        }
+    }
+}
+
+/*Isso é para não aparecer os links de midia social e arte de quadrados em aparelhos mobile*/
+.social-header, .hero-design {
+    display: none;
+}
+
+.hero {
+    
+    background: #0E0E0E;
+    color: white;
+    display: grid;
+    text-align: center;
+    padding: 4em;
+ 
+    h1 span {
+        color: #FA829F;
+    }
+
+    .main-button {
+        display: flex;
+        margin: 0 auto;
+        width: 200px;
+     
+        .btn-1 {
+            background-color: #EB8CA3;
+            width: 200px;
+            height: 50px;
+            border: none;
+            color: black;
+            font-family: 'Cinzel', serif;
+            font-weight: bold;
+            border-radius: 30px;   
+            text-align: center;
+        } 
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    .hero {
+        height: 90vh;
+    }
+
+    .nav-container {
+        display: grid;
+        grid-template-columns: 81% auto; 
+        background: unset;
+        
+
+        header{
+            background: #161616;
+        }
+    }
+
+    header {
+        padding: 2em 2em 2em 4em;
+    }
+    .social-header{
+        padding: 2em 4em 2em 0;
+    }
+    
+    .social-header {
+        display: block;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            width: 7em;
+            float: right;
+            
+            img {
+                width: 20px;
+            }
+        } 
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: 81% auto; 
+        background: unset;
+        padding: 0;
+
+        .content {
+            background: #0E0E0E;
+            padding: 4em 8em 6em 4em;
+            text-align: left;
+
+            h1 {
+                font-size: 3em;
+                line-height: 1.2em;
+            }
+        }
+        .main-button {
+            padding-top: 2em;
+            float: left;
+            /*margin: unset;*/  
+        }
+    }
+        .hero-design {
+            display: unset;
+            margin-left: -51.8%;
+            margin-top: 15%;
+            width: 100%;
+        }
+}
+
