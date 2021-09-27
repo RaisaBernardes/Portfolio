@@ -6,6 +6,7 @@ body {
     height: 100vh;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    line-height:200%;
     overflow-x:hidden;
     overflow-y: hidden;
 }
@@ -63,8 +64,17 @@ header {
     text-align: center;
     padding: 4em;
  
+    h3 {
+        font-family: 'Cinzel', serif;
+        letter-spacing:3px;
+    }
+    
+    h1 {
+        font-family: 'Cinzel', serif;
+    }
+    
     h1 span {
-        color: #FA829F;
+        color: #FF83C6;
     }
 
     .main-button {
@@ -73,7 +83,7 @@ header {
         width: 200px;
      
         .btn-1 {
-            background-color: #EB8CA3;
+            background-color: #F68DC6;
             width: 200px;
             height: 50px;
             border: none;
@@ -99,6 +109,10 @@ header {
 
         header{
             background: #161616;
+
+            .logo{
+                padding-left: 2em;
+            }
         }
     }
 
@@ -132,7 +146,7 @@ header {
 
         .content {
             background: #0E0E0E;
-            padding: 4em 8em 6em 4em;
+            padding: 2.5em 8em 6em 6em;
             text-align: left;
 
             h1 {
@@ -148,9 +162,9 @@ header {
     }
         .hero-design {
             display: unset;
-            margin-left: -51.8%;
-            margin-top: 15%;
-            width: 100%;
+            margin-left: -77.5%;
+            margin-top: 17%;
+            width: 150%;
         }
 }
 
