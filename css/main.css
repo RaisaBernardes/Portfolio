@@ -87,7 +87,7 @@ header ul a {
   color: #FF83C6;
 }
 
-.hero .main-button {
+.hero .meet {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,16 +95,24 @@ header ul a {
   width: 200px;
 }
 
-.hero .main-button .btn-1 {
-  background-color: #F68DC6;
-  width: 200px;
-  height: 50px;
-  border: none;
-  color: black;
+.hero .meet p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-family: 'Cinzel', serif;
   font-weight: bold;
-  border-radius: 30px;
   text-align: center;
+  color: #F68DC6;
+}
+
+.hero img {
+  margin-top: 3.4em;
+  margin-left: -3em;
+  width: 2.5%;
+  height: 2.5%;
 }
 
 @media only screen and (min-width: 1050px) {
@@ -142,9 +150,9 @@ header ul a {
             justify-content: space-between;
     width: 7em;
     float: right;
-  }
-  .social-header ul img {
-    width: 20px;
+    /* img {
+                width: 20px;
+            }*/
   }
   .hero {
     display: -ms-grid;
@@ -163,7 +171,7 @@ header ul a {
     font-size: 3em;
     line-height: 1.2em;
   }
-  .hero .main-button {
+  .hero .meet {
     padding-top: 2em;
     float: left;
     /*margin: unset;*/
