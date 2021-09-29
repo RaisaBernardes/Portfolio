@@ -52,6 +52,7 @@ header .logo {
   font-weight: bold;
   font-family: 'Poppins';
   font-size: large;
+  padding-left: 1em;
 }
 
 header ul {
@@ -66,12 +67,12 @@ header ul a {
   padding: 0 1em;
 }
 
-.title {
+.name {
   text-align: center;
   margin-top: 2em;
 }
 
-.title h1 {
+.name h1 {
   font-family: 'Cinzel', serif;
   text-align: center;
 }
@@ -94,12 +95,6 @@ header ul a {
 }
 
 @media only screen and (min-width: 1050px) {
-  .title {
-    position: absolute;
-    margin-top: 0em;
-    margin-left: 23em;
-    font-size: 1.4em;
-  }
   .grid-block {
     margin-top: 3em;
     display: -ms-grid;
@@ -113,18 +108,34 @@ header ul a {
   }
   .grid-block .right-content {
     width: 35em;
-    margin-top: 2.5em;
+    margin-top: -0.5em;
     text-align: left;
   }
-  .grid-block .right-content p {
-    width: 38em;
+  .grid-block .right-content .presentation {
+    color: #3B3B3B;
+    margin-top: -1em;
+    width: 40em;
+    line-height: 1.9;
+  }
+  .grid-block .right-content .greeting {
+    color: #3B3B3B;
+  }
+  .grid-block .right-content h1 {
+    margin-top: 0em;
+    margin-left: 0.7em;
+    color: #161616;
+    font-family: 'Cinzel', serif;
+    font-weight: 100;
+    font-size: 2.3em;
+    text-align: left;
+    line-height: 0.5;
   }
   .grid-block .left-content {
-    margin-top: 2em;
-    margin-right: -10em;
+    margin-top: 0em;
+    margin-right: -5em;
   }
   .grid-block .left-content .about-picture {
-    width: 20em;
+    width: 25em;
   }
 }
 /*# sourceMappingURL=about.css.map */
