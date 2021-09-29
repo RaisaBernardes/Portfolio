@@ -96,9 +96,9 @@ header ul a {
 @media only screen and (min-width: 1050px) {
   .title {
     position: absolute;
-    margin-top: 0.8em;
-    margin-left: 15em;
-    font-size: 1.8em;
+    margin-top: 0em;
+    margin-left: 19em;
+    font-size: 1.6em;
   }
   .grid-block {
     margin-top: 3em;
@@ -112,20 +112,19 @@ header ul a {
     padding: 0;
   }
   .grid-block .right-content {
-    background: #F8F8F8;
     width: 35em;
-    margin-top: 2em;
+    margin-top: 2.5em;
     text-align: left;
   }
   .grid-block .right-content p {
     width: 38em;
   }
   .grid-block .left-content {
-    margin-top: 1em;
+    margin-top: -1.2em;
     margin-right: -10em;
   }
   .grid-block .left-content .about-picture {
-    width: 20em;
+    width: 23em;
   }
 }
 /*# sourceMappingURL=about.css.map */

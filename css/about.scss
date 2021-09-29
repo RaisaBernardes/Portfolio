@@ -87,9 +87,9 @@ header {
     
     .title {
         position: absolute;
-        margin-top: 0.8em;
-        margin-left: 15em;
-        font-size: 1.8em;
+        margin-top: 0em;
+        margin-left: 19em;
+        font-size: 1.6em;
     }
     
     .grid-block {
@@ -101,9 +101,9 @@ header {
         padding: 0;
 
         .right-content {
-            background: #F8F8F8;
+            
             width: 35em;
-            margin-top: 2em;
+            margin-top: 2.5em;
             text-align: left;
             
             p {
@@ -113,15 +113,12 @@ header {
         }
         .left-content {
             
-            margin-top: 1em;
+            margin-top: -1.2em;
             margin-right: -10em;
             
             .about-picture{
-                width: 20em;
+                width: 23em;
             }
-
         }
     }
-
-    
 }
