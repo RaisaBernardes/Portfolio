@@ -6,9 +6,9 @@ body {
     height: 100vh;
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    line-height:200%;
+    line-height:170%;
     overflow-x:hidden;
-   /* overflow-y: hidden;*/
+    
 }
 
 ul {
@@ -19,6 +19,12 @@ ul {
 a {
     text-decoration: none;
 }
+
+span {
+    text-decoration: underline;
+    text-decoration-thickness: 0.1em;
+    text-underline-position: under;
+}
 img {width: 100%;}
 
 .nav-container {
@@ -28,16 +34,16 @@ img {width: 100%;}
         color: white;
     }
 }
-
 header {
     display: flex;
     justify-content: space-between;
     padding: 2em;
-
+    
     .logo {
         color: white;
         font-weight: bold;
         font-family: 'Poppins';
+        font-size: large;
     }
 
     ul {
@@ -48,4 +54,74 @@ header {
             padding: 0 1em;
         }
     }
+}
+
+.title {
+    text-align: center;
+    margin-top: 2em;
+    h1 {
+        font-family: 'Cinzel', serif;
+        text-align: center;
+        
+    }
+}
+
+    .grid-block {
+    background: white;
+    display: grid;
+    text-align: center;
+    
+        p {
+            padding: 2em;
+            font-size: 13px;
+            
+        }
+        img {
+            margin-top: 1em;
+            width: 15em;
+        }
+    }
+
+
+@media only screen and (min-width: 1050px) {
+    
+    .title {
+        position: absolute;
+        margin-top: 0.8em;
+        margin-left: 15em;
+        font-size: 1.8em;
+    }
+    
+    .grid-block {
+        margin-top: 3em;
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-rows: 100% auto; 
+        background: unset;
+        padding: 0;
+
+        .right-content {
+            background: #F8F8F8;
+            width: 35em;
+            margin-top: 2em;
+            text-align: left;
+            
+            p {
+                width: 38em;
+            }
+          
+        }
+        .left-content {
+            
+            margin-top: 1em;
+            margin-right: -10em;
+            
+            .about-picture{
+                width: 20em;
+            }
+
+        }
+    }
+
+    
 }

@@ -5,9 +5,8 @@ body {
   height: 100vh;
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  line-height: 200%;
+  line-height: 170%;
   overflow-x: hidden;
-  /* overflow-y: hidden;*/
 }
 
 ul {
@@ -18,6 +17,12 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+span {
+  text-decoration: underline;
+  text-decoration-thickness: 0.1em;
+  text-underline-position: under;
 }
 
 img {
@@ -46,6 +51,7 @@ header .logo {
   color: white;
   font-weight: bold;
   font-family: 'Poppins';
+  font-size: large;
 }
 
 header ul {
@@ -58,5 +64,68 @@ header ul a {
   /*Isso é para o espaçamento entre as palavras do menu darem certo*/
   display: block;
   padding: 0 1em;
+}
+
+.title {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.title h1 {
+  font-family: 'Cinzel', serif;
+  text-align: center;
+}
+
+.grid-block {
+  background: white;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+}
+
+.grid-block p {
+  padding: 2em;
+  font-size: 13px;
+}
+
+.grid-block img {
+  margin-top: 1em;
+  width: 15em;
+}
+
+@media only screen and (min-width: 1050px) {
+  .title {
+    position: absolute;
+    margin-top: 0.8em;
+    margin-left: 15em;
+    font-size: 1.8em;
+  }
+  .grid-block {
+    margin-top: 3em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% auto;
+        grid-template-columns: 50% auto;
+    -ms-grid-rows: 100% auto;
+        grid-template-rows: 100% auto;
+    background: unset;
+    padding: 0;
+  }
+  .grid-block .right-content {
+    background: #F8F8F8;
+    width: 35em;
+    margin-top: 2em;
+    text-align: left;
+  }
+  .grid-block .right-content p {
+    width: 38em;
+  }
+  .grid-block .left-content {
+    margin-top: 1em;
+    margin-right: -10em;
+  }
+  .grid-block .left-content .about-picture {
+    width: 20em;
+  }
 }
 /*# sourceMappingURL=about.css.map */

@@ -46,6 +46,7 @@ header .logo {
   color: white;
   font-weight: bold;
   font-family: 'Poppins';
+  font-size: large;
 }
 
 header ul {
@@ -223,14 +224,21 @@ section .arrowRight {
     display: -ms-grid;
     display: grid;
     place-content: center;
-    margin-left: 7em;
+    margin-left: 5em;
+    margin-top: 0.5em;
+  }
+  .left .featured-title {
+    padding-top: 5em;
+    padding-left: 2em;
+  }
+  .left .featured-description {
     margin-top: 3em;
-    /*  background: #F8F8F8; */
-    /*-----TESTE----*/
-    width: 17em;
-    /*  padding-left: 2em; 
-            padding-right: 2em; 
-            height: 30.5em; */
+    padding-left: 2em;
+    width: 20em;
+  }
+  .left .view-case-study {
+    margin-top: 4em;
+    padding-left: 2em;
   }
   .left .arrowRight {
     display: -webkit-box;
@@ -240,26 +248,6 @@ section .arrowRight {
     margin-top: -2.8em;
     width: 1.2em;
     height: 1.2em;
-  }
-  .left .rectangle {
-    margin-top: 1.8em;
-    margin-left: 7.3em;
-    width: 350px;
-    height: 485px;
-    background: #F8F8F8;
-  }
-  .left .rectangle .featured-title {
-    padding-top: 7em;
-    padding-left: 2em;
-  }
-  .left .rectangle .featured-description {
-    margin-top: 3em;
-    padding-left: 2em;
-    width: 20em;
-  }
-  .left .rectangle .view-case-study {
-    margin-top: 4em;
-    padding-left: 2em;
   }
   .right {
     margin-left: 2em;
@@ -279,8 +267,17 @@ section .arrowRight {
     display: -ms-grid;
     display: grid;
     place-content: center;
-    margin-left: 7em;
+    margin-left: 5em;
     margin-top: 0.5em;
+  }
+  .left .arrowRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 10em;
+    margin-top: -2.8em;
+    width: 1.2em;
+    height: 1.2em;
   }
   .left .featured-title {
     padding-top: 2em;
@@ -301,4 +298,31 @@ section .arrowRight {
     margin-top: 3em;
   }
 }
+
+/*
+@media only screen and (min-width: 1250px) {
+
+    .rectangle {
+        margin-top: 1.8em;
+        margin-left: 7.3em;
+        width:350px;
+        height:485px;
+        background:#F8F8F8;
+
+        .featured-title {
+            padding-top: 5em;
+            padding-left: 2em;
+        }
+        .featured-description {
+            margin-top: 3em;
+            padding-left: 2em;
+            width: 20em;
+        }
+        .view-case-study {
+            margin-top: 4em;
+            padding-left: 2em; 
+        }
+
+    }
+}*/
 /*# sourceMappingURL=main.css.map */
