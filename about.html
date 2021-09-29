@@ -24,16 +24,14 @@
 
             <div class="grid-block">
                 <div class="left-content">
-                    <img class="about-picture" src="Images/photo art.png" alt="aboutPicture">
+                    <img class="transition2" src="Images/photo art.png" alt="aboutPicture">
                 </div>
 
-            <div class="right-content">
+            <div class="right-content transition2">
                 
-                <p class="greeting">Hey there! Thanks for stopping by. </p>
-                    
+                <p>Hey there! Thanks for stopping by. </p>
                 <h1>I'm Raísa Bernardes</h1>
-                    
-                <p class="presentation">I'm a bachelor's in Computer Science and am very passionate about 
+                <p>I'm a bachelor's in Computer Science and am very passionate about 
                 everything that concerns user experience. 
                 I fell in love with this field about 1 year ago, a period which I dedicated 
                 to exploring, studying the segment, and conducting my undergraduate thesis 
@@ -47,12 +45,24 @@
                 <br>I'll be happy to meet you, don't hesitate to reach out!</p>
 
             </div> 
-    
-    
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js" integrity="sha512-DlTk2PLUinhBupE89kHOJTt11QqbRMQVlbb26XVDvp4D1kt0fRvQJslvZnTelRJHq6yK0tIPCR7cul8+9Blz0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+<script>
 
+gsap.from(".transition2",  {
+                scrollTrigger: {
+                    trigger: '.transition2',
+                    start: "top bottom"
+                },
+                y: 50,
+                opacity: 0,
+                duration: 1.2,
+                stagger: .3
+            })
+</script>
 
 </body>
 </html>

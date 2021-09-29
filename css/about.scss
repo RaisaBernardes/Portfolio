@@ -3,7 +3,7 @@
 
 
 body {
-    height: 100vh;
+    height: 90vh;
     margin: 0;
     font-family: 'Poppins', sans-serif;
     line-height:170%;
@@ -38,40 +38,39 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 2em;
-    
-    
+
     .logo {
         color: white;
         font-weight: bold;
         font-family: 'Poppins';
         font-size: large;
-        padding-left: 1em;
+        padding-left: 3.8em;
     }
 
     ul {
         display: flex;
+        padding-right: 2em;                /*ATENÇÃO*/
+        
         a {
             /*Isso é para o espaçamento entre as palavras do menu darem certo*/
             display: block; 
             padding: 0 1em;
+            
         }
     }
 }
-
-.name {
-    text-align: center;
-    margin-top: 2em;
-    h1 {
-        font-family: 'Cinzel', serif;
-        text-align: center;
-        
-    }
-}
+    
 
     .grid-block {
     background: white;
     display: grid;
     text-align: center;
+    margin-top: 2em;
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            text-align: center;  
+        }
     
         p {
             padding: 2em;
@@ -100,14 +99,11 @@ header {
             margin-top: -0.5em;
             text-align: left;
             
-            .presentation {
+            p {
                 color: #3B3B3B;
-                margin-top: -1em;
+                margin-top: 0.5em;
                 width: 40em;
                 line-height: 1.9;
-            }
-            .greeting {
-                color: #3B3B3B;
             }
 
             h1 {
@@ -125,7 +121,7 @@ header {
             margin-top: 0em;
             margin-right: -5em;
             
-            .about-picture{
+            img{
                 width: 25em;
             }
         }

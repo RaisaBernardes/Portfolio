@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Poppins:wght@300;400&family=Source+Serif+Pro:wght@300;400&display=swap");
 body {
-  height: 100vh;
+  height: 90vh;
   margin: 0;
   font-family: 'Poppins', sans-serif;
   line-height: 170%;
@@ -52,13 +52,15 @@ header .logo {
   font-weight: bold;
   font-family: 'Poppins';
   font-size: large;
-  padding-left: 1em;
+  padding-left: 3.8em;
 }
 
 header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-right: 2em;
+  /*ATENÇÃO*/
 }
 
 header ul a {
@@ -67,20 +69,16 @@ header ul a {
   padding: 0 1em;
 }
 
-.name {
-  text-align: center;
-  margin-top: 2em;
-}
-
-.name h1 {
-  font-family: 'Cinzel', serif;
-  text-align: center;
-}
-
 .grid-block {
   background: white;
   display: -ms-grid;
   display: grid;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.grid-block h1 {
+  font-family: 'Cinzel', serif;
   text-align: center;
 }
 
@@ -111,14 +109,11 @@ header ul a {
     margin-top: -0.5em;
     text-align: left;
   }
-  .grid-block .right-content .presentation {
+  .grid-block .right-content p {
     color: #3B3B3B;
-    margin-top: -1em;
+    margin-top: 0.5em;
     width: 40em;
     line-height: 1.9;
-  }
-  .grid-block .right-content .greeting {
-    color: #3B3B3B;
   }
   .grid-block .right-content h1 {
     margin-top: 0em;
@@ -134,7 +129,7 @@ header ul a {
     margin-top: 0em;
     margin-right: -5em;
   }
-  .grid-block .left-content .about-picture {
+  .grid-block .left-content img {
     width: 25em;
   }
 }

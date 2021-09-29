@@ -153,6 +153,7 @@ section .arrowRight {
     -ms-grid-columns: 81% auto;
         grid-template-columns: 81% auto;
     background: unset;
+    height: 5.5em;
   }
   .nav-container header {
     background: #161616;
