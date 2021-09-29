@@ -24,10 +24,10 @@
 
             <div class="grid-block">
                 <div class="left-content">
-                    <img class="transition2" src="Images/photo art.png" alt="aboutPicture">
+                    <img class="stagger1" src="Images/photo art.png" alt="aboutPicture">
                 </div>
 
-            <div class="right-content transition2">
+            <div class="right-content stagger1">
                 
                 <p>Hey there! Thanks for stopping by. </p>
                 <h1>I'm Raísa Bernardes</h1>
@@ -52,16 +52,23 @@
 
 <script>
 
-gsap.from(".transition2",  {
-                scrollTrigger: {
-                    trigger: '.transition2',
-                    start: "top bottom"
-                },
-                y: 50,
-                opacity: 0,
-                duration: 1.2,
-                stagger: .3
+gsap.registerPlugin(ScrollTrigger);
+            var tl = gsap.timeline();
+
+            tl.from('.content', {
+            y: '-30',
+            opacity: 0,
+            duration: 2,
+            ease: Power4.easeOut
             })
+            tl.from('.stagger1', {
+                opacity: 0,
+                y: -50,
+                stagger: .3,
+                ease: Power4.easeOut,
+                duration: 2
+
+            }, "-=1.5")
 </script>
 
 </body>
