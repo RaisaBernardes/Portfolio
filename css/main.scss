@@ -19,9 +19,7 @@ ul {
 a {
     text-decoration: none;
 }
-img {
-    width: 100%;
-}
+img {width: 100%;}
 
 .nav-container {
     background-color: #161616;
@@ -35,7 +33,6 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 2em;
-    position: relative;
 
     .logo {
         color: white;
@@ -44,26 +41,14 @@ header {
         font-size: large;
     }
 
-    .menu {
+    ul {
         display: flex;
-
-        li {
+        a {
             /*Isso é para o espaçamento entre as palavras do menu darem certo*/
             display: block; 
             padding: 0 1em;
-
-            ul {
-                display: none;
-            }  
-        } 
-        
-        
+        }
     }
-
-    
-
-   
-   
 }
 
 /*Isso é para não aparecer os links de midia social e arte de quadrados em aparelhos mobile*/
@@ -150,8 +135,6 @@ section {
         display: grid;
         grid-template-columns: 81% auto; 
         background: unset;
-        height: 5.5em;
-        
        
         header{
             background: #161616;
@@ -300,14 +283,12 @@ section {
 
 /*
 @media only screen and (min-width: 1250px) {
-
     .rectangle {
         margin-top: 1.8em;
         margin-left: 7.3em;
         width:350px;
         height:485px;
         background:#F8F8F8;
-
         .featured-title {
             padding-top: 5em;
             padding-left: 2em;
@@ -321,7 +302,5 @@ section {
             margin-top: 4em;
             padding-left: 2em; 
         }
-
     }
 }*/
-

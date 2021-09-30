@@ -40,7 +40,6 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 2em;
-  position: relative;
 }
 
 header .logo {
@@ -50,20 +49,16 @@ header .logo {
   font-size: large;
 }
 
-header .menu {
+header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header .menu li {
+header ul a {
   /*Isso é para o espaçamento entre as palavras do menu darem certo*/
   display: block;
   padding: 0 1em;
-}
-
-header .menu li ul {
-  display: none;
 }
 
 /*Isso é para não aparecer os links de midia social e arte de quadrados em aparelhos mobile*/
@@ -158,7 +153,6 @@ section .arrowRight {
     -ms-grid-columns: 81% auto;
         grid-template-columns: 81% auto;
     background: unset;
-    height: 5.5em;
   }
   .nav-container header {
     background: #161616;
@@ -307,14 +301,12 @@ section .arrowRight {
 
 /*
 @media only screen and (min-width: 1250px) {
-
     .rectangle {
         margin-top: 1.8em;
         margin-left: 7.3em;
         width:350px;
         height:485px;
         background:#F8F8F8;
-
         .featured-title {
             padding-top: 5em;
             padding-left: 2em;
@@ -328,7 +320,6 @@ section .arrowRight {
             margin-top: 4em;
             padding-left: 2em; 
         }
-
     }
 }*/
 /*# sourceMappingURL=main.css.map */
