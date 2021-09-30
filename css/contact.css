@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Poppins:wght@300;400&family=Source+Serif+Pro:wght@300;400&display=swap");
 body {
-  height: 90vh;
+  height: 120vh;
   margin: 0px;
   font-family: 'Poppins', sans-serif;
   line-height: 170%;
@@ -75,6 +75,10 @@ h1 {
   color: #161616;
 }
 
+p {
+  text-align: center;
+}
+
 .wrapper {
   text-align: center;
   margin-top: 3em;
@@ -120,10 +124,18 @@ h1 {
   outline: 0;
 }
 
+.dbl-field .message {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin-top: 7.5em;
+}
+
 .dbl-field .message textarea {
   height: 150px;
   width: 415px;
-  margin: 2.5em;
   border-color: #B7B7B7;
 }
 
@@ -158,10 +170,13 @@ h1 {
 }
 
 .button-area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 2em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin-top: 16.5em;
+  margin-left: -6.9em;
 }
 
 .button-area .submit-button {
@@ -172,5 +187,158 @@ h1 {
   font-weight: 100;
   color: white;
   border: none;
+}
+
+@media only screen and (min-width: 1050px) {
+  .container {
+    position: relative;
+    padding-left: 22em;
+    padding-right: 22em;
+    padding-bottom: 20em;
+    /*APAGAR DEPOIS*/
+    margin-top: 0em;
+  }
+  .wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background-color: red;
+    padding-bottom: 1.5em;
+    width: 38em;
+  }
+  .dbl-field .field {
+    padding-top: 2em;
+  }
+  .dbl-field .field input {
+    width: 250px;
+    height: 30px;
+  }
+  .dbl-field .field input::-webkit-input-placeholder {
+    padding: 1em;
+  }
+  .dbl-field .field input:-ms-input-placeholder {
+    padding: 1em;
+  }
+  .dbl-field .field input::-ms-input-placeholder {
+    padding: 1em;
+  }
+  .dbl-field .field input::placeholder {
+    padding: 1em;
+  }
+  .dbl-field .message {
+    position: relative;
+    padding-top: -20em;
+    /*ATENÇÃO*/
+  }
+  .dbl-field .message textarea {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    height: 190px;
+    width: 513px;
+    border-color: #B7B7B7;
+  }
+  .button-area {
+    position: relative;
+    margin-left: 0em;
+  }
+  .button-area .submit-button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    height: 40px;
+    width: 200px;
+    background-color: #161616;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    color: white;
+    border: none;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .container {
+    padding-left: 22em;
+    padding-right: 22em;
+    padding-bottom: 20em;
+    /*APAGAR DEPOIS*/
+  }
+  .wrapper {
+    background-color: red;
+    padding-bottom: 1.5em;
+  }
+  .dbl-field .field {
+    padding-top: 2em;
+  }
+  .dbl-field .field input {
+    width: 269px;
+    height: 30px;
+  }
+  .dbl-field .field input::-webkit-input-placeholder {
+    padding: 1em;
+  }
+  .dbl-field .field input:-ms-input-placeholder {
+    padding: 1em;
+  }
+  .dbl-field .field input::-ms-input-placeholder {
+    padding: 1em;
+  }
+  .dbl-field .field input::placeholder {
+    padding: 1em;
+  }
+  .dbl-field .message textarea {
+    height: 190px;
+    width: 550px;
+    border-color: #B7B7B7;
+  }
+  .dbl-field .message textarea::-webkit-input-placeholder {
+    font-family: 'Poppins', sans-serif;
+    color: #B7B7B7;
+    padding: 1em;
+  }
+  .dbl-field .message textarea:-ms-input-placeholder {
+    font-family: 'Poppins', sans-serif;
+    color: #B7B7B7;
+    padding: 1em;
+  }
+  .dbl-field .message textarea::-ms-input-placeholder {
+    font-family: 'Poppins', sans-serif;
+    color: #B7B7B7;
+    padding: 1em;
+  }
+  .dbl-field .message textarea::placeholder {
+    font-family: 'Poppins', sans-serif;
+    color: #B7B7B7;
+    padding: 1em;
+  }
+  .dbl-field .message textarea:focus {
+    -webkit-box-shadow: 0 0 0 0;
+            box-shadow: 0 0 0 0;
+    outline: 0;
+  }
+  .button-area {
+    position: relative;
+    margin-left: 0em;
+  }
+  .button-area .submit-button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    height: 40px;
+    width: 200px;
+    background-color: #161616;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    color: white;
+    border: none;
+  }
 }
 /*# sourceMappingURL=contact.css.map */
