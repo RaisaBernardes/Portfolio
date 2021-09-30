@@ -2,10 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Poppins:wght@300;400&family=Source+Serif+Pro:wght@300;400&display=swap");
 body {
-  height: 100vh;
-  margin: 0;
+  height: 90vh;
+  margin: 0px;
   font-family: 'Poppins', sans-serif;
-  line-height: 200%;
+  line-height: 170%;
   overflow-x: hidden;
   /* overflow-y: hidden;*/
 }
@@ -20,8 +20,10 @@ a {
   text-decoration: none;
 }
 
-img {
-  width: 100%;
+span {
+  text-decoration: underline;
+  text-decoration-thickness: 0.1em;
+  text-underline-position: under;
 }
 
 .nav-container {
@@ -46,17 +48,112 @@ header .logo {
   color: white;
   font-weight: bold;
   font-family: 'Poppins';
+  font-size: large;
+  padding-left: 3.8em;
 }
 
 header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-right: 2em;
 }
 
 header ul a {
   /*Isso é para o espaçamento entre as palavras do menu darem certo*/
   display: block;
   padding: 0 1em;
+}
+
+/*-----CABEÇALHO TERMINA AQUI-----*/
+h1 {
+  margin-top: 2em;
+  text-align: center;
+  font-family: 'Cinzel', sans-serif;
+  font-size: 2.3em;
+  font-weight: 100;
+}
+
+.wrapper {
+  text-align: center;
+  margin-top: 3em;
+  min-height: 60vh;
+  /*  background-color: red; */
+}
+
+.dbl-field .field input {
+  width: 200px;
+  height: 30px;
+}
+
+.dbl-field .field input::-webkit-input-placeholder {
+  font-family: 'Poppins', sans-serif;
+  color: #B7B7B7;
+  padding: 1em;
+}
+
+.dbl-field .field input:-ms-input-placeholder {
+  font-family: 'Poppins', sans-serif;
+  color: #B7B7B7;
+  padding: 1em;
+}
+
+.dbl-field .field input::-ms-input-placeholder {
+  font-family: 'Poppins', sans-serif;
+  color: #B7B7B7;
+  padding: 1em;
+}
+
+.dbl-field .field input::placeholder {
+  font-family: 'Poppins', sans-serif;
+  color: #B7B7B7;
+  padding: 1em;
+}
+
+.dbl-field .message textarea {
+  height: 150px;
+  width: 415px;
+  margin: 2.5em;
+}
+
+.dbl-field .message textarea::-webkit-input-placeholder {
+  font-family: 'Poppins', sans-serif;
+  color: #B7B7B7;
+  padding: 1em;
+}
+
+.dbl-field .message textarea:-ms-input-placeholder {
+  font-family: 'Poppins', sans-serif;
+  color: #B7B7B7;
+  padding: 1em;
+}
+
+.dbl-field .message textarea::-ms-input-placeholder {
+  font-family: 'Poppins', sans-serif;
+  color: #B7B7B7;
+  padding: 1em;
+}
+
+.dbl-field .message textarea::placeholder {
+  font-family: 'Poppins', sans-serif;
+  color: #B7B7B7;
+  padding: 1em;
+}
+
+.button-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 2em;
+}
+
+.button-area .submit-button {
+  height: 40px;
+  width: 200px;
+  background-color: #161616;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  color: white;
+  border: none;
 }
 /*# sourceMappingURL=contact.css.map */

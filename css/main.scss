@@ -19,7 +19,9 @@ ul {
 a {
     text-decoration: none;
 }
-img {width: 100%;}
+img {
+    width: 100%;
+}
 
 .nav-container {
     background-color: #161616;
@@ -33,6 +35,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 2em;
+    position: relative;
 
     .logo {
         color: white;
@@ -41,14 +44,26 @@ header {
         font-size: large;
     }
 
-    ul {
+    .menu {
         display: flex;
-        a {
+
+        li {
             /*Isso é para o espaçamento entre as palavras do menu darem certo*/
             display: block; 
             padding: 0 1em;
-        }
+
+            ul {
+                display: none;
+            }  
+        } 
+        
+        
     }
+
+    
+
+   
+   
 }
 
 /*Isso é para não aparecer os links de midia social e arte de quadrados em aparelhos mobile*/
