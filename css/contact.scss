@@ -69,21 +69,28 @@ h1 {
     margin-top: 3em;
     min-height: 60vh;
   /*  background-color: red; */
-
-   
+ 
 }
 .dbl-field{
 
     .field{
         input{
             width: 200px;
-            height: 30px;   
+            height: 30px; 
+            border-color: #B7B7B7;  
+            border-style: solid;
+            border-width: 0.1em;
+            
         }
         input::placeholder {
-            
             font-family: 'Poppins', sans-serif;
             color: #B7B7B7;
             padding: 1em;
+        }
+
+        input:focus {
+            box-shadow: 0 0 0 0;
+            outline: 0;
         }
     }
     .message {
@@ -91,15 +98,18 @@ h1 {
             height: 150px;
             width: 415px;
             margin: 2.5em;
+            border-color: #B7B7B7;
         }
         textarea::placeholder {
             font-family: 'Poppins', sans-serif;
             color: #B7B7B7;
             padding: 1em;
         }
-    }
-
-    
+        textarea:focus{
+            box-shadow: 0 0 0 0;
+            outline: 0;
+        }
+    }  
 }
 
 .button-area{

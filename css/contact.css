@@ -84,6 +84,9 @@ h1 {
 .dbl-field .field input {
   width: 200px;
   height: 30px;
+  border-color: #B7B7B7;
+  border-style: solid;
+  border-width: 0.1em;
 }
 
 .dbl-field .field input::-webkit-input-placeholder {
@@ -110,10 +113,17 @@ h1 {
   padding: 1em;
 }
 
+.dbl-field .field input:focus {
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
 .dbl-field .message textarea {
   height: 150px;
   width: 415px;
   margin: 2.5em;
+  border-color: #B7B7B7;
 }
 
 .dbl-field .message textarea::-webkit-input-placeholder {
@@ -138,6 +148,12 @@ h1 {
   font-family: 'Poppins', sans-serif;
   color: #B7B7B7;
   padding: 1em;
+}
+
+.dbl-field .message textarea:focus {
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  outline: 0;
 }
 
 .button-area {
