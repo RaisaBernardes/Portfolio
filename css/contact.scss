@@ -87,15 +87,16 @@ p {
          
             width: 200px;
             height: 30px; 
-            border-color: #B7B7B7;  
+            border-color: #C7C7C7;  
             border-style: solid;
             border-width: 0.1em;
             
         }
         input::placeholder {
             font-family: 'Poppins', sans-serif;
-            color: #B7B7B7;
+            color: #C7C7C7;
             padding: 1em;
+            font-size: 13px;
         }
 
         input:focus {
@@ -109,13 +110,17 @@ p {
 
         textarea {
             height: 150px;
-            width: 415px;
+            width: 412px;
             border-color: #B7B7B7;
+            border-style: solid;
+            border-width: 0.1em;
+            
         }
         textarea::placeholder {
             font-family: 'Poppins', sans-serif;
             color: #B7B7B7;
             padding: 1em;
+            font-size: 13px;
         }
         textarea:focus{
             box-shadow: 0 0 0 0;
@@ -180,6 +185,7 @@ p {
             }
             input::placeholder {
                 padding: 1em;
+                
             }
         }
        
