@@ -8,6 +8,7 @@ body {
   line-height: 170%;
   overflow-x: hidden;
   /* overflow-y: hidden;*/
+  background-color: #FCFCFC;
 }
 
 ul {
@@ -194,9 +195,14 @@ p {
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    background-color: red;
+    background-color: white;
     padding-bottom: 1.5em;
     width: 38em;
+    -webkit-box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.011), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.016), 12.5px 12.5px 10px rgba(0, 0, 0, 0.02), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.024), 41.8px 41.8px 33.4px rgba(0, 0, 0, 0.029), 100px 100px 80px rgba(0, 0, 0, 0.04);
+            box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.011), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.016), 12.5px 12.5px 10px rgba(0, 0, 0, 0.02), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.024), 41.8px 41.8px 33.4px rgba(0, 0, 0, 0.029), 100px 100px 80px rgba(0, 0, 0, 0.04);
+  }
+  .dbl-field {
+    padding-top: 1em;
   }
   .dbl-field .field {
     padding-top: 2em;
@@ -261,8 +267,13 @@ p {
     /*APAGAR DEPOIS*/
   }
   .wrapper {
-    background-color: red;
+    background-color: white;
     padding-bottom: 1.5em;
+    -webkit-box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.011), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.016), 12.5px 12.5px 10px rgba(0, 0, 0, 0.02), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.024), 41.8px 41.8px 33.4px rgba(0, 0, 0, 0.029), 100px 100px 80px rgba(0, 0, 0, 0.04);
+            box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.011), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.016), 12.5px 12.5px 10px rgba(0, 0, 0, 0.02), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.024), 41.8px 41.8px 33.4px rgba(0, 0, 0, 0.029), 100px 100px 80px rgba(0, 0, 0, 0.04);
+  }
+  .dbl-field {
+    padding-top: 1em;
   }
   .dbl-field .field {
     padding-top: 2em;
