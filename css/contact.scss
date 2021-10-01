@@ -77,10 +77,12 @@ p {
  
 }
 .dbl-field{
+    
 
     .field{
-
+        
         input{
+         
             width: 200px;
             height: 30px; 
             border-color: #B7B7B7;  
@@ -100,11 +102,8 @@ p {
         }
     }
     .message {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        margin-top: 7.5em;
+        
+        margin-top: 1em;
 
         textarea {
             height: 150px;
@@ -124,12 +123,8 @@ p {
 }
 
 .button-area{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 16.5em;
-    margin-left: -6.9em;
+    margin-top: 1em;
+    margin-left: -13.5em;
 
     .submit-button{
         height: 40px;
@@ -180,7 +175,7 @@ p {
        
         .message {
             position: relative;
-            padding-top: -20em;  /*ATENÇÃO*/
+            padding-top: 13em;  /*ATENÇÃO*/
         
             textarea {
                 position: absolute;
@@ -197,6 +192,7 @@ p {
     .button-area{
         position: relative;
         margin-left: 0em;
+        padding-top: 2.5em;
 
         .submit-button{
             position: absolute;
@@ -280,5 +276,3 @@ p {
 
 }
     
-
-  

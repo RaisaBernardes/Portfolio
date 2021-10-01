@@ -125,12 +125,7 @@ p {
 }
 
 .dbl-field .message {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  margin-top: 7.5em;
+  margin-top: 1em;
 }
 
 .dbl-field .message textarea {
@@ -170,13 +165,8 @@ p {
 }
 
 .button-area {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  margin-top: 16.5em;
-  margin-left: -6.9em;
+  margin-top: 1em;
+  margin-left: -13.5em;
 }
 
 .button-area .submit-button {
@@ -229,7 +219,7 @@ p {
   }
   .dbl-field .message {
     position: relative;
-    padding-top: -20em;
+    padding-top: 13em;
     /*ATENÇÃO*/
   }
   .dbl-field .message textarea {
@@ -245,6 +235,7 @@ p {
   .button-area {
     position: relative;
     margin-left: 0em;
+    padding-top: 2.5em;
   }
   .button-area .submit-button {
     position: absolute;
