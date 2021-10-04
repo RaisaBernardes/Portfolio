@@ -8,7 +8,7 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 170%;
     overflow-x:hidden;
-   /* overflow-y: hidden;*/
+   
 
    background-color: #FCFCFC;
 }
@@ -16,15 +16,37 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-a {
-    text-decoration: none;
+
+    li {
+        a{
+            text-decoration: none; 
+            position: relative; 
+        }
+
+        .hover-effect::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 1.2px;
+            background-color: currentColor;
+            transform: scaleX(0);
+            transition: transform 250ms ease-in;
+        }
+
+        .hover-effect:hover::after{
+            transform: scaleX(0.68);
+            transition: transform 250ms ease-in; 
+        }
+    }
 }
 
 span {
     text-decoration: underline;
-    text-decoration-thickness: 0.1em;
-    text-underline-position: under;
+    text-decoration-thickness: 0.05em;
+    text-underline-offset: 5.5px;  
+    
 }
 
 .nav-container {
@@ -44,6 +66,7 @@ header {
         font-family: 'Poppins';
         font-size: large;
         padding-left: 3.8em;
+        text-decoration: none;
     }
 
     ul {
@@ -73,24 +96,36 @@ p {
 }
 .wrapper {
     text-align: center;
-    margin-top: 3em;
+    margin-top: 13em;
     min-height: 60vh;
-  /*  background-color: red; */
- 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding-bottom: 1.5em;
+    width: 28em;
+    box-shadow:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.011),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.016),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.02),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.024),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.029),
+    100px 100px 80px rgba(0, 0, 0, 0.04);  
 }
-.dbl-field{
-    
 
+.dbl-field{
+    padding-top: 1em;
+    
     .field{
-        
+        padding-top: 2em;
+       
         input{
-         
             width: 200px;
             height: 30px; 
-            border-color: #C7C7C7;  
+            border-color: #B7B7B7;
             border-style: solid;
-            border-width: 0.1em;
-            
+            border-width: 0.1em;  
         }
         input::placeholder {
             font-family: 'Poppins', sans-serif;
@@ -104,6 +139,7 @@ p {
             outline: 0;
         }
     }
+
     .message-area {
         
         margin-top: 1em;
@@ -114,7 +150,6 @@ p {
             border-color: #B7B7B7;
             border-style: solid;
             border-width: 0.1em;
-            
         }
         textarea::placeholder {
             font-family: 'Poppins', sans-serif;
@@ -152,7 +187,7 @@ p {
         position: relative;
         padding-left: 22em;
         padding-right: 22em;
-        padding-bottom: 20em; /*APAGAR DEPOIS*/
+        padding-bottom: 1em; /*APAGAR DEPOIS*/
         margin-top: 0em;
 
    }
@@ -180,18 +215,24 @@ p {
             padding-top: 2em;
         
             input{
-                width: 250px;
+                width: 256px;
                 height: 30px; 
+                padding-left: 1.5em;
+                font-family: 'Poppins', sans-serif;
+                color: #333333;
+                border-style: solid;
+                border-width: 0.1em;  
+                border-color: #B7B7B7;
             }
             input::placeholder {
-                padding: 1em;
-                
-            }
+                padding-left: 0.2em;
+             }
         }
        
         .message-area {
             position: relative;
             padding-top: 13em;  /*ATENÇÃO*/
+           
         
             textarea {
                 position: absolute;
@@ -199,8 +240,20 @@ p {
                 top: 50%;
                 transform: translate(-50%, -50%);
                 height: 190px;
-                width: 513px;
+                width: 542px;
+                padding-left: 1.5em;
+                padding-top: 1.5em;
+                font-family: 'Poppins', sans-serif;
+                color: #333333;
+                border-style: solid;
+                border-width: 0.1em;  
                 border-color: #B7B7B7;
+            }
+            textarea::placeholder {
+                font-family: 'Poppins', sans-serif;
+                color: #B7B7B7;
+                padding-top: 0em;
+                padding-left: 0.2em;
             }
         }  
     }
@@ -231,7 +284,7 @@ p {
     .container {
         padding-left: 22em;
         padding-right: 22em;
-        padding-bottom: 20em; /*APAGAR DEPOIS*/
+        padding-bottom: 1em;
     }
  
      .wrapper {
@@ -255,24 +308,36 @@ p {
              padding-top: 2em;
          
              input{
-                 width: 269px;
+                 width: 256px;
                  height: 30px; 
+                 padding-left: 1.5em;
+                 font-family: 'Poppins', sans-serif;
+                 color: #333333;
+                 border-style: solid;
+                 border-width: 0.1em;  
              }
              input::placeholder {
-                 padding: 1em;
+                padding-left: 0.2em;
              }
          }
         
          .message-area {
              textarea {
                  height: 190px;
-                 width: 550px;
+                 width: 542px;
                  border-color: #B7B7B7;
+                 padding-left: 1.5em;
+                 padding-top: 1.5em;
+                 font-family: 'Poppins', sans-serif;
+                 color: #333333;
+                 border-style: solid;
+                 border-width: 0.1em;  
              }
              textarea::placeholder {
                  font-family: 'Poppins', sans-serif;
                  color: #B7B7B7;
-                 padding: 1em;
+                 padding-top: 0;
+                 padding-left: 0.2em;
              }
              textarea:focus{
                  box-shadow: 0 0 0 0;
