@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/contact.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="./contact.js"></script>
+
+    
 </head>
 <body>
     
@@ -28,26 +32,36 @@
 
     <div class="container transition2">
         <div class="wrapper">
-                    <form action="#">
+                    <form action="https://formsubmit.co/raisa.rmro@gmail.com" method="POST">
                         <div class="dbl-field">
                             <div class="field">
-                                <input type="text" placeholder="Your name">
-                                <input type="text" placeholder="Your email">
+                                <input name="Name" class="name" type="text" placeholder="Your name" required>
+                                <input name="Email" class="email" type="email" placeholder="Your email" required>
+                                
+                                
                             </div>
                         
-                            <div class="message">
-                                <textarea placeholder="Your message"></textarea>
+                            <div class="message-area">
+                                <textarea name="Message" class="message" placeholder="Your message" required></textarea>
                             </div>
+                        </div>
+
+                        <div class="status">
+
                         </div>
 
                         <div class="button-area">
                             <button class="submit-button" type="submit">Submit message</button>
                         </div>
                         
+                        
                     </form>
         </div>
     </div>
 
+  
+
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js" integrity="sha512-DlTk2PLUinhBupE89kHOJTt11QqbRMQVlbb26XVDvp4D1kt0fRvQJslvZnTelRJHq6yK0tIPCR7cul8+9Blz0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     

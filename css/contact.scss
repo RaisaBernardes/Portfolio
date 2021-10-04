@@ -104,7 +104,7 @@ p {
             outline: 0;
         }
     }
-    .message {
+    .message-area {
         
         margin-top: 1em;
 
@@ -189,7 +189,7 @@ p {
             }
         }
        
-        .message {
+        .message-area {
             position: relative;
             padding-top: 13em;  /*ATENÇÃO*/
         
@@ -263,7 +263,7 @@ p {
              }
          }
         
-         .message {
+         .message-area {
              textarea {
                  height: 190px;
                  width: 550px;

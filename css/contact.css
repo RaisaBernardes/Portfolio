@@ -129,11 +129,11 @@ p {
   outline: 0;
 }
 
-.dbl-field .message {
+.dbl-field .message-area {
   margin-top: 1em;
 }
 
-.dbl-field .message textarea {
+.dbl-field .message-area textarea {
   height: 150px;
   width: 412px;
   border-color: #B7B7B7;
@@ -141,35 +141,35 @@ p {
   border-width: 0.1em;
 }
 
-.dbl-field .message textarea::-webkit-input-placeholder {
+.dbl-field .message-area textarea::-webkit-input-placeholder {
   font-family: 'Poppins', sans-serif;
   color: #B7B7B7;
   padding: 1em;
   font-size: 13px;
 }
 
-.dbl-field .message textarea:-ms-input-placeholder {
+.dbl-field .message-area textarea:-ms-input-placeholder {
   font-family: 'Poppins', sans-serif;
   color: #B7B7B7;
   padding: 1em;
   font-size: 13px;
 }
 
-.dbl-field .message textarea::-ms-input-placeholder {
+.dbl-field .message-area textarea::-ms-input-placeholder {
   font-family: 'Poppins', sans-serif;
   color: #B7B7B7;
   padding: 1em;
   font-size: 13px;
 }
 
-.dbl-field .message textarea::placeholder {
+.dbl-field .message-area textarea::placeholder {
   font-family: 'Poppins', sans-serif;
   color: #B7B7B7;
   padding: 1em;
   font-size: 13px;
 }
 
-.dbl-field .message textarea:focus {
+.dbl-field .message-area textarea:focus {
   -webkit-box-shadow: 0 0 0 0;
           box-shadow: 0 0 0 0;
   outline: 0;
@@ -233,12 +233,12 @@ p {
   .dbl-field .field input::placeholder {
     padding: 1em;
   }
-  .dbl-field .message {
+  .dbl-field .message-area {
     position: relative;
     padding-top: 13em;
     /*ATENÇÃO*/
   }
-  .dbl-field .message textarea {
+  .dbl-field .message-area textarea {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -304,32 +304,32 @@ p {
   .dbl-field .field input::placeholder {
     padding: 1em;
   }
-  .dbl-field .message textarea {
+  .dbl-field .message-area textarea {
     height: 190px;
     width: 550px;
     border-color: #B7B7B7;
   }
-  .dbl-field .message textarea::-webkit-input-placeholder {
+  .dbl-field .message-area textarea::-webkit-input-placeholder {
     font-family: 'Poppins', sans-serif;
     color: #B7B7B7;
     padding: 1em;
   }
-  .dbl-field .message textarea:-ms-input-placeholder {
+  .dbl-field .message-area textarea:-ms-input-placeholder {
     font-family: 'Poppins', sans-serif;
     color: #B7B7B7;
     padding: 1em;
   }
-  .dbl-field .message textarea::-ms-input-placeholder {
+  .dbl-field .message-area textarea::-ms-input-placeholder {
     font-family: 'Poppins', sans-serif;
     color: #B7B7B7;
     padding: 1em;
   }
-  .dbl-field .message textarea::placeholder {
+  .dbl-field .message-area textarea::placeholder {
     font-family: 'Poppins', sans-serif;
     color: #B7B7B7;
     padding: 1em;
   }
-  .dbl-field .message textarea:focus {
+  .dbl-field .message-area textarea:focus {
     -webkit-box-shadow: 0 0 0 0;
             box-shadow: 0 0 0 0;
     outline: 0;
