@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Poppins:wght@300;400&family=Source+Serif+Pro:wght@300;400&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     height: 100vh;
@@ -171,7 +174,11 @@ header {
             font-family: 'Cinzel', serif;
             font-weight: bold;
             text-align: center;
-            color: #F68DC6; 
+            color: #FF83C6; 
+        }
+
+        p:hover{
+            color: #E977B5; 
         }
     }
 
@@ -182,6 +189,7 @@ header {
         height: 1em;
     }
 }
+
 section {
     padding: 4em 2em;
     text-align: center;
