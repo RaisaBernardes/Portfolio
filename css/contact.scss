@@ -3,7 +3,7 @@
 
 
 body {
-    height:120vh; 
+    height: 130vh; 
     margin: 0px;
     font-family: 'Poppins', sans-serif;
     line-height: 170%;
@@ -80,7 +80,7 @@ header {
     }
 }
 
-/*-----CABEÇALHO TERMINA AQUI-----*/
+/*-----BODY CONTENT BEGGINS-----*/
 
 h1 {
     margin-top: 2em;
@@ -165,10 +165,15 @@ p {
 }
 
 .button-area{
-    margin-top: 1em;
-    margin-left: -13.5em;
+    position: relative;
+    margin-left: 0em;
+    padding-top: 60px;
 
     .submit-button{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
         height: 40px;
         width: 200px;
         background-color: #161616;
@@ -179,6 +184,46 @@ p {
     }
 }
 
+/*------FOOTER BEGGINS-----*/
+
+.footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    background-color: #0E0E0E;
+    margin-top: 35em; 
+    font-family: 'Poppins', sans-serif;
+    color: #FCFCFC;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.social-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+
+    li {
+        margin: 0 25px;
+    }
+}
+
+.footer-bottom{
+    font-weight: 100;
+    font-size: 13px;
+    font-style: italic;
+}
 
 
 @media only screen and (min-width: 1050px) {
@@ -261,7 +306,7 @@ p {
     .button-area{
         position: relative;
         margin-left: 0em;
-        padding-top: 2.5em;
+        padding-top: 85px;
 
         .submit-button{
             position: absolute;
@@ -349,6 +394,7 @@ p {
      .button-area{
         position: relative;
         margin-left: 0em;
+        padding-top: 85px;
 
         .submit-button{
             position: absolute;
