@@ -8,14 +8,14 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 170%;
     overflow-x:hidden;
-   
-
-   background-color: #FCFCFC;
+    background-color: #FCFCFC;
 }
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+
+    
 
     li {
         a{
@@ -42,11 +42,10 @@ ul {
     }
 }
 
-span {
+.current-page {
     text-decoration: underline;
     text-decoration-thickness: 0.05em;
     text-underline-offset: 5.5px;  
-    
 }
 
 .nav-container {
@@ -55,6 +54,7 @@ span {
         color: white;
     }
 }
+
 header {
     display: flex;
     justify-content: space-between;
@@ -76,11 +76,74 @@ header {
             /*Isso é para o espaçamento entre as palavras do menu darem certo*/
             display: block; 
             padding: 0 1em;
-        }
-    }
-}
+        } 
 
-/*-----BODY CONTENT BEGGINS-----*/
+        .sub-menu {
+            display: none;
+        }  
+
+    } 
+
+    ul .resume:hover {
+    
+        .sub-menu {
+            display: block;
+        }  
+
+        
+    }
+} //End header
+
+
+
+
+
+//-------------------SUB-MENU----------------------
+.sub-menu{
+    position: relative;
+    
+   ul{
+       position: absolute;
+       display: block;
+       background-color: #161616;
+  
+       li{
+           margin-top: 10px;
+           margin-bottom: 12px;
+           
+           a {
+            color: white;  
+            left: 0;
+            top: 100%;
+           }
+
+           a:hover{
+               color: #DADADA;
+           }
+
+           a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 1.2px;
+            background-color: currentColor;
+            transform: scaleX(0);
+            transition: transform 250ms ease-in;
+            }
+
+            a:hover::after{
+                transform: scaleX(0.80);
+                transition: transform 250ms ease-in; 
+                color: #DADADA;
+            }
+       }
+   }
+} 
+
+
+//------------BODY CONTENT BEGGINS---------------
 
 h1 {
     margin-top: 2em;
