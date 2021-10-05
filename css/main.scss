@@ -6,9 +6,9 @@ body {
     height: 100vh;
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    line-height:200%;
+    line-height:170%;
     overflow-x:hidden;
-   /* overflow-y: hidden;*/
+    background-color: #FCFCFC;
 }
 
 ul {
@@ -21,7 +21,38 @@ a {
 }
 img {width: 100%;}
 
+
+//-----------EFEITOS MENU-------------
+
+li {
+    a{
+        text-decoration: none; 
+        position: relative; 
+    }
+
+    .hover-effect::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 1.2px;
+        background-color: currentColor;
+        transform: scaleX(0);
+        transition: transform 250ms ease-in;
+    }
+
+    .hover-effect:hover::after{
+        transform: scaleX(0.68);
+        transition: transform 250ms ease-in; 
+    }
+}
+
+//--------------------------------------------
+
+
 .nav-container {
+    position: relative;
     background-color: #161616;
 
     a{
@@ -33,6 +64,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 2em;
+    
 
     .logo {
         color: white;
@@ -48,8 +80,64 @@ header {
             display: block; 
             padding: 0 1em;
         }
+
+        .sub-menu {
+            display: none;
+        }  
     }
-}
+
+    ul .resume:hover {
+        
+        .sub-menu {
+            display: block;
+        }  
+    }
+
+}//End header
+
+
+
+//-------------------SUB-MENU----------------------
+.sub-menu{
+    position: relative;
+    
+   ul{
+       position: absolute;
+       display: block;
+       background-color: #161616;
+  
+       li{
+           margin-top: 10px;
+           margin-bottom: 12px;
+           
+           a {
+            color: white;  
+            left: 0;
+            top: 100%;
+           }
+
+           a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 1.2px;
+            background-color: currentColor;
+            transform: scaleX(0);
+            transition: transform 250ms ease-in;
+            }
+
+            a:hover::after{
+                transform: scaleX(0.80);
+                transition: transform 250ms ease-in; 
+                color: white;
+            }
+       }
+   }
+} 
+
+
 
 /*Isso é para não aparecer os links de midia social e arte de quadrados em aparelhos mobile*/
 .social-header, .hero-design {
@@ -125,16 +213,63 @@ section {
 }
 
 
+/*-----------FOOTER BEGGINS---------*/
+
+.footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    background-color: #0E0E0E;
+    margin-top: 10em; 
+    font-family: 'Poppins', sans-serif;
+    color: #FCFCFC;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.social-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+    padding-top: 5px;
+    
+    li {
+        margin: 0 25px;  
+    }
+}
+
+.footer-bottom{
+    font-weight: 100;
+    font-size: 13px;
+    font-style: italic;
+    text-align: center;
+}
+
 
 @media only screen and (min-width: 1050px) {
+    
+
     .hero {
         height: 90vh;
     }
 
     .nav-container {
+        z-index: 1;
         display: grid;
         grid-template-columns: 81% auto; 
         background: unset;
+
        
         header{
             background: #161616;
@@ -171,6 +306,7 @@ section {
         grid-template-columns: 81% auto; 
         background: unset;
         padding: 0;
+        
 
         .content {
             background: #0E0E0E;

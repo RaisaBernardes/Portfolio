@@ -85,17 +85,12 @@ header {
     } 
 
     ul .resume:hover {
-    
+        
         .sub-menu {
             display: block;
         }  
-
-        
     }
 } //End header
-
-
-
 
 
 //-------------------SUB-MENU----------------------
@@ -117,10 +112,6 @@ header {
             top: 100%;
            }
 
-           a:hover{
-               color: #DADADA;
-           }
-
            a::after {
             content: "";
             position: absolute;
@@ -136,7 +127,7 @@ header {
             a:hover::after{
                 transform: scaleX(0.80);
                 transition: transform 250ms ease-in; 
-                color: #DADADA;
+                color: white;
             }
        }
    }

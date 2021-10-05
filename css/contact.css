@@ -121,10 +121,6 @@ header ul .resume:hover .sub-menu {
   top: 100%;
 }
 
-.sub-menu ul li a:hover {
-  color: #DADADA;
-}
-
 .sub-menu ul li a::after {
   content: "";
   position: absolute;
@@ -148,7 +144,7 @@ header ul .resume:hover .sub-menu {
   transition: -webkit-transform 250ms ease-in;
   transition: transform 250ms ease-in;
   transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
-  color: #DADADA;
+  color: white;
 }
 
 h1 {
