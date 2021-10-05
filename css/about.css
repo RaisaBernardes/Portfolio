@@ -20,6 +20,36 @@ a {
   text-decoration: none;
 }
 
+li a {
+  text-decoration: none;
+  position: relative;
+}
+
+li .hover-effect::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1.2px;
+  background-color: currentColor;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+}
+
+li .hover-effect:hover::after {
+  -webkit-transform: scaleX(0.68);
+          transform: scaleX(0.68);
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+}
+
 span {
   text-decoration: underline;
   text-decoration-thickness: 0.1em;
@@ -69,6 +99,61 @@ header ul a {
   padding: 0 1em;
 }
 
+header ul .sub-menu {
+  display: none;
+}
+
+header ul .resume:hover .sub-menu {
+  display: block;
+}
+
+.sub-menu {
+  position: relative;
+}
+
+.sub-menu ul {
+  position: absolute;
+  display: block;
+  background-color: #161616;
+}
+
+.sub-menu ul li {
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+.sub-menu ul li a {
+  color: white;
+  left: 0;
+  top: 100%;
+}
+
+.sub-menu ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1.2px;
+  background-color: currentColor;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+}
+
+.sub-menu ul li a:hover::after {
+  -webkit-transform: scaleX(0.8);
+          transform: scaleX(0.8);
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+  color: white;
+}
+
 .grid-block {
   background: white;
   display: -ms-grid;
@@ -90,6 +175,62 @@ header ul a {
 .grid-block img {
   margin-top: 1em;
   width: 15em;
+}
+
+/*------FOOTER BEGGINS-----*/
+.footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100%;
+  background-color: #0E0E0E;
+  margin-top: 10em;
+  font-family: 'Poppins', sans-serif;
+  color: #FCFCFC;
+}
+
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.social-links {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Poppins';
+}
+
+.social-links li {
+  margin: 0 25px;
+}
+
+.footer-bottom {
+  font-weight: 100;
+  font-size: 13px;
+  font-style: italic;
+  text-align: center;
 }
 
 @media only screen and (min-width: 1050px) {

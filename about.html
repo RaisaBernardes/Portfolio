@@ -14,14 +14,24 @@
             <a href="index.html" class="logo">R.</a>
             <nav>
                 <ul>
-                    <li><a href="#"><span>About</span></a></li>
-                    <li><a href="#">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#"><span class="current-page">About</span></a></li>
+                    <li class="resume"><a class="hover-effect" href="#">Resume</a>
+
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="#">English</a></li>
+                                <li><a href="#">Portuguese</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+
+                    <li><a class="hover-effect" href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
     </div>
-
+        <div class="container">
             <div class="grid-block">
                 <div class="left-content">
                     <img class="stagger1" src="Images/photo art.png" alt="aboutPicture">
@@ -46,6 +56,7 @@
 
                 </div> 
             </div>
+        </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js" integrity="sha512-DlTk2PLUinhBupE89kHOJTt11QqbRMQVlbb26XVDvp4D1kt0fRvQJslvZnTelRJHq6yK0tIPCR7cul8+9Blz0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -70,6 +81,22 @@ gsap.registerPlugin(ScrollTrigger);
 
             }, "-=1.5")
 </script>
+
+
+<!--FOOTER-->
+
+<footer class="footer">
+    <div class="footer-content">
+        <ul class="social-links">
+            <li><a href="https://www.linkedin.com/in/raisa-bernardes/" target="_blank"><img src="images/images_footer/linkedin-icon-white.png" alt="linkedin"></a></li>
+            <li><a href="https://www.instagram.com/raisamirellarob/" target="_blank"><img src="images/Images_footer/instagram-icon-white.png" alt="instagram"></a></li>
+            <li><a href="https://web.whatsapp.com/send?phone=5581999458630" target="_blank"><img src="images/Images_footer/whatsapp-icon-white.png" alt="whatsapp"></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>Developed by Raísa Bernardes</p>
+    </div>
+</footer>
 
 </body>
 </html>
