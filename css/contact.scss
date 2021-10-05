@@ -168,7 +168,7 @@ p {
     position: relative;
     margin-left: 0em;
     padding-top: 60px;
-
+    
     .submit-button{
         position: absolute;
         left: 50%;
@@ -181,6 +181,16 @@ p {
         font-weight: 100;
         color: white;
         border: none;
+        box-shadow:
+        1.9px 1.9px 1.1px -16px rgba(0, 0, 0, 0.014),
+        5.1px 5.4px 3px -16px rgba(0, 0, 0, 0.02),
+        12.4px 13px 7.2px -16px rgba(0, 0, 0, 0.026),
+        41px 43px 24px -16px rgba(0, 0, 0, 0.04)
+        ;
+    }
+
+    .submit-button:hover {
+        background-color: #252525;
     }
 }
 
