@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/thankyou.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <script src="./contact.js"></script>
 
@@ -37,10 +37,10 @@
         </header>
     </div>
     
-    <h1 class="stagger1">LET'S GET IN TOUCH</h1>
-    <p class="description stagger1">I'll be happy to hear from you!</p>
+    <h1>LET'S GET IN TOUCH</h1>
+    <p class="description">I'll be happy to hear from you!</p>
 
-    <div class="container transition2">
+    <div class="container">
         <div class="wrapper">
                     <form action="https://formsubmit.co/raisa.rmro@gmail.com" method="POST">
                         <div class="dbl-field">
@@ -59,6 +59,9 @@
                         <div class="button-area">
                             <button class="submit-button" type="submit">Submit message</button>
                         </div>
+                        <div class="status">
+                            <p>Message sent</p>
+                        </div>
                         
                         
                     </form>
@@ -66,41 +69,6 @@
     </div>
 
     
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js" integrity="sha512-DlTk2PLUinhBupE89kHOJTt11QqbRMQVlbb26XVDvp4D1kt0fRvQJslvZnTelRJHq6yK0tIPCR7cul8+9Blz0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-    <script>
-    
-    gsap.registerPlugin(ScrollTrigger);
-                var tl = gsap.timeline();
-    
-                tl.from('.content', {
-                y: '-30',
-                opacity: 0,
-                duration: 2,
-                ease: Power4.easeOut
-                })
-                tl.from('.stagger1', {
-                    opacity: 0,
-                    y: -50,
-                    stagger: .3,
-                    ease: Power4.easeOut,
-                    duration: 2
-    
-                }, "-=1.5")
-
-               gsap.from(".transition2",  {
-                scrollTrigger: {
-                    trigger: '.transition2',
-                    start: "top bottom"
-                },
-                y: 50,
-                opacity: 0,
-                duration: 1.2,
-                stagger: .3
-            })
-    </script>
 
 
 <!--FOOTER-->
