@@ -133,7 +133,6 @@ header {
 .wrapper-content{
     justify-content: center; //added
     text-align: center;
-    min-height: 30vh;
     width: 700px; 
     margin: 0 auto 0 auto;
     //background-color: red;
@@ -142,8 +141,6 @@ header {
     top: 50%;
     transform: translate(-50%, -50%);
     padding-top: 4em;
-    
-    
     
     .content{
         justify-content: center;
@@ -242,14 +239,6 @@ header {
 
 //--------------------GAMBIARRAS---------------------
 
-@media only screen and (min-width: 1050px) {
-    
-    footer {
-        bottom: 0;  
-    }
-}
-
-//------------------------------------------
 
 @media only screen and (min-width: 1600px) {
     
