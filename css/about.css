@@ -62,6 +62,7 @@ img {
 
 .nav-container {
   background-color: #161616;
+  position: relative;
 }
 
 .nav-container a {
@@ -89,7 +90,6 @@ header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-right: 2em;
 }
 
 header ul a {

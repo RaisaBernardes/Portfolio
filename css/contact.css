@@ -54,6 +54,7 @@ ul li .hover-effect:hover::after {
 
 .nav-container {
   background-color: #161616;
+  position: relative;
 }
 
 .nav-container a {
@@ -75,7 +76,6 @@ header .logo {
   font-weight: bold;
   font-family: 'Poppins';
   font-size: large;
-  padding-left: 3.8em;
   text-decoration: none;
 }
 
@@ -83,7 +83,6 @@ header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-right: 2em;
 }
 
 header ul a {
@@ -366,6 +365,9 @@ p {
 }
 
 @media only screen and (min-width: 1050px) {
+  header .logo {
+    padding-left: 2em;
+  }
   .container {
     position: relative;
     padding-left: 22em;

@@ -50,6 +50,7 @@ ul {
 
 .nav-container {
     background-color: #161616;
+    position: relative;
     a{
         color: white;
     }
@@ -65,13 +66,12 @@ header {
         font-weight: bold;
         font-family: 'Poppins';
         font-size: large;
-        padding-left: 3.8em;
         text-decoration: none;
     }
 
     ul {
         display: flex;
-        padding-right: 2em;
+
         a {
             /*Isso é para o espaçamento entre as palavras do menu darem certo*/
             display: block; 
@@ -298,7 +298,13 @@ p {
 
 @media only screen and (min-width: 1050px) {
 
-   .container {
+   header{
+       .logo{
+           padding-left: 2em;
+       }
+   }
+   
+    .container {
         position: relative;
         padding-left: 22em;
         padding-right: 22em;
