@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,iFAAI;AACZ,OAAO,CAAC,iJAAI;AAGZ,AAAA,IAAI,CAAC;EACD,MAAM,EAAE,KAAK;EACb,MAAM,EAAE,CAAC;EACT,WAAW,EAAE,qBAAqB;EAClC,WAAW,EAAC,IAAI;EAChB,UAAU,EAAC,MAAM;EACjB,gBAAgB,EAAE,OAAO;CAC5B",
+    "sources": [
+        "jointly.scss"
+    ],
+    "names": [],
+    "file": "jointly.css"
+}
