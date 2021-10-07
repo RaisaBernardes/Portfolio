@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Poppins:wght@300;400&family=Source+Serif+Pro:wght@300;400&display=swap");
 body {
   height: 100vh;
-  margin: 0px;
+  margin: 0;
   font-family: 'Poppins', sans-serif;
   line-height: 170%;
   overflow-x: hidden;
@@ -75,7 +75,6 @@ header .logo {
   font-weight: bold;
   font-family: 'Poppins';
   font-size: large;
-  padding-left: 3.8em;
   text-decoration: none;
 }
 
@@ -263,6 +262,12 @@ header ul .resume:hover .sub-menu {
   text-align: center;
 }
 
+@media only screen and (min-width: 1050px) {
+  header .logo {
+    padding-left: 2em;
+  }
+}
+
 @media only screen and (min-width: 1600px) {
   footer {
     bottom: 0;
@@ -277,7 +282,7 @@ header ul .resume:hover .sub-menu {
 
 @media only screen and (min-height: 100px) and (max-width: 700px) {
   .wrapper-content {
-    padding-top: 20em;
+    padding-top: 1em;
     position: relative;
   }
 }
