@@ -16,12 +16,12 @@ ul {
   padding: 0;
 }
 
-ul li a {
+li a {
   text-decoration: none;
   position: relative;
 }
 
-ul li .hover-effect::after {
+li .hover-effect::after {
   content: "";
   position: absolute;
   left: 0;
@@ -37,7 +37,7 @@ ul li .hover-effect::after {
   transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
 }
 
-ul li .hover-effect:hover::after {
+li .hover-effect:hover::after {
   -webkit-transform: scaleX(0.68);
           transform: scaleX(0.68);
   -webkit-transition: -webkit-transform 250ms ease-in;
@@ -54,6 +54,7 @@ ul li .hover-effect:hover::after {
 
 .nav-container {
   background-color: #161616;
+  position: relative;
 }
 
 .nav-container a {
@@ -82,7 +83,6 @@ header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-right: 2em;
 }
 
 header ul a {
@@ -281,16 +281,10 @@ header ul .resume:hover .sub-menu {
 }
 
 @media only screen and (min-height: 100px) and (min-width: 100px) and (max-width: 700px) {
-  header .logo {
-    padding-left: 2em;
-  }
   .wrapper-content {
     padding-top: 1em;
     padding-bottom: 10em;
     position: relative;
-  }
-  footer {
-    bottom: 0;
   }
 }
 /*# sourceMappingURL=temporary.css.map */

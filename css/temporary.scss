@@ -17,6 +17,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
 
     li {
         a{
@@ -39,7 +40,6 @@ ul {
             transition: transform 250ms ease-in; 
         }
     }
-}
 
 .current-page {
     text-decoration: underline;
@@ -48,6 +48,8 @@ ul {
 }
 .nav-container {
     background-color: #161616;
+    position: relative;
+
     a{
         color: white;
     }
@@ -66,7 +68,7 @@ header {
     }
     ul {
         display: flex;
-        padding-right: 2em;
+        //padding-right: 2em;
         a {
             /*Isso é para o espaçamento entre as palavras do menu darem certo*/
             display: block; 
@@ -263,11 +265,6 @@ header {
 
 @media only screen and (min-height: 100px) and (min-width: 100px) and (max-width: 700px) {
     
-    header{
-        .logo{
-            padding-left: 2em;
-        }
-    }
     
     .wrapper-content{
         padding-top: 1em;
@@ -275,9 +272,7 @@ header {
         position: relative;
     }
 
-    footer {
-        bottom: 0;
-    } 
+    
 }
 
 

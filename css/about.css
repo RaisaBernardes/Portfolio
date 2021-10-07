@@ -83,7 +83,6 @@ header .logo {
   font-weight: bold;
   font-family: 'Poppins';
   font-size: large;
-  padding-left: 3.8em;
 }
 
 header ul {
@@ -236,6 +235,9 @@ header ul .resume:hover .sub-menu {
 }
 
 @media only screen and (min-width: 1050px) {
+  header .logo {
+    padding-left: 2em;
+  }
   .container {
     position: relative;
   }

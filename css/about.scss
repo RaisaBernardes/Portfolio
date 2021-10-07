@@ -68,7 +68,6 @@ header {
         font-weight: bold;
         font-family: 'Poppins';
         font-size: large;
-        padding-left: 3.8em;
     }
 
     ul {
@@ -79,7 +78,6 @@ header {
             /*Isso é para o espaçamento entre as palavras do menu darem certo*/
             display: block; 
             padding: 0 1em;
-            
         }
 
         .sub-menu {
@@ -206,6 +204,12 @@ header {
 //-----------------------------------------
 
 @media only screen and (min-width: 1050px) {
+
+    header{
+        .logo{
+            padding-left: 2em;
+        }
+    }
  
     .container {
         position: relative;
