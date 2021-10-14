@@ -12,12 +12,15 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     line-height:170%;
-    overflow-x:hidden;
-    background-color: #FCFCFC;
+    //overflow-x:hidden;
+    //background-color: #FCFCFC;
+    background-color: white;
 }
 
+//----------------------BELOW: HEADER SLIDESHOW---------------------
+
 .intro {
-    height: 100vh;
+    height: 50vh;
     position: relative;
 }
 
@@ -32,6 +35,7 @@ body {
     //display: none; //Because I'm using javascript in order to show or hide images
     opacity: 0; //opacity beggins at 0.
     transition: opacity 1s ease-in-out;
+    
 }
 
 /*
@@ -40,4 +44,310 @@ body {
 }
 //This block would show the FIRST image of the class .intro without javascript
 */
+
+//---------------------------------BELOW: BODY CONTENT----------------------------------
+
+section {
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.three-blocks {
+    background: #FCFCFC; //red; 
+}
+
+.three-blocks-container .case-study{
+    margin-bottom: 50px;
+    font-family: 'Cinzel', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.three-blocks-container ul li{
+        
+    background: white;
+    padding: 2em;
+    margin-bottom: 1em; //This is to separate each other (Remember that they're in vertical)
+    list-style-type: none; 
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.011),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.016),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.02),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.024),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.029),
+        100px 100px 80px rgba(0, 0, 0, 0.04)
+      ; 
+}
+
+.three-blocks-title {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Cinzel', sans-serif;
+    color: #2B2B2B;
+}
+
+.three-blocks-description {
+    margin-bottom: 2em;
+    font-size: 13px;
+    color: #2B2B2B;
+}
+
+//-----------BELOW: UX PROCESS IMAGE----------
+
+.process-image{
+   
+   P {
+       font-family: 'Cinzel', sans-serif;
+       font-weight: 100;
+       font-size: 16px;
+       color: #2B2B2B;
+       margin-top: 10vh;
+   }
+   
+   img {
+        width: 70%;
+        padding-top: 2em;  
+    }
+}
+
+//---------BELOW: PROJECT BACKGROUND---------
+
+.project-background {
+
+    background-color: #2B2B2B;
+    padding-left: 3em;
+    padding-right: 3em;
+
+    .p-title{
+        font-family: 'Cinzel', sans-serif;
+        font-size: 18px;
+        font-weight: 100;
+        letter-spacing: 2px;
+        text-align: center;
+        padding-top: 3em;
+        color: #F3F3F3;
+    }
+
+    .p-description {
+        font-size: 13px;
+        font-weight: 100;
+        color: #F3F3F3;
+        padding-top: 4em;
+        padding-bottom: 3em;
+        text-align: center;
+    }
+}
+
+//---------BELOW: INITIATION SECTION---------
+
+.initiation {
+    text-align: center;
+    background-color: #EFE3E6;
+    padding-left: 3em;
+    padding-right: 3em; 
+    
+    h1 {
+        font-family: 'Cinzel', sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-align: center;
+        padding-top: 3em;
+    }
+
+    .title {
+        color: #A62C4A;
+        font-family: 'Cinzel', sans-serif;
+        font-size: 18px;
+        font-weight: 100;
+        padding-top: 2em;
+    }
+
+    p {
+        font-size: 13px;
+        font-weight: 100;
+        text-align: center;
+        color: #2B2B2B;
+        
+    }
+
+    .product-goals {
+        padding-top: 2em;
+    }
+
+    .business-goals {
+        padding-top: 2em;
+    }
+
+    .risks-mitigations {
+        padding-top: 2em;
+    }
+
+    .target-audience {
+        padding-top: 2em;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 800px) {
+    .three-blocks {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%; 
+      background-color: #F3F3F3;
+      
+    }
+    .three-blocks-container {
+        padding-top: 3em; 
+        max-width: 980px;
+        min-width: 979px;
+        width: 100%; 
+        background-color: #F3F3F3;
+
+    }
+
+    .three-blocks-container ul{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 2em; 
+        display: flex;
+        justify-content: center; 
+        margin-top: -5em;
+        margin-bottom: -10em;
+        padding-top: 4em;
+    }
+    .three-blocks-container ul li{
+        background: white;
+        list-style-type: none; 
+        max-width: 240px;
+        width: 100%;  
+ 
+        .three-blocks-title {
+            padding-bottom: 1.5em;
+        }
+
+        .three-blocks-description {
+            width: 12em;
+            margin-left: auto; //Isso faz com que o paragrafo fique centralizado no quadrado branco quando a tela aumenta
+            margin-right: auto;
+            text-align: left;
+            line-height: 2em;
+        }
+    }
+
+    .process-image{
+        p {
+            font-family: 'Cinzel', sans-serif;
+            font-weight: 100;
+            font-size: 18px;
+            letter-spacing: 2px;
+            color: #2B2B2B;
+            padding-top: 4em;   
+        }
+        
+        img {
+             width: 70%;
+             padding-top: 4em;
+         }
+    }
+
+    .project-background {
+        background-color: #2B2B2B;
+        align-items: left;
+        padding-left: 12em;
+        padding-right: 12em;
+        
+        .p-title{
+            text-align: left;
+        }
+    
+        .p-description {
+            text-align: left;
+        }
+    }
+
+    .initiation {
+        //FAZER GRID DE 2 BLOCOS
+        padding-left: 12em;
+        padding-right: 12em;
+
+        h1 {
+            font-size: 30px;
+            padding-bottom: 30px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 50% auto;
+        }
+
+        .line { //GAMBIARRA
+            background-color: #A62C4A;
+            color: #EFE3E6;
+            height: 1px;
+        }
+        
+        .product-goals {
+            
+            p {
+                text-align: left;
+                font-size: 16px;
+                padding-top: 1em;
+            } 
+
+            .title {
+                font-size: 20px;
+            }
+        }
+        .business-goals {
+            margin-top: 10em;
+            p {
+                text-align: right;
+                font-size: 16px;
+                padding-top: 1em;
+            } 
+
+            .title {
+                font-size: 20px;
+            }
+        }
+    
+        .risks-mitigations {
+            p {
+                text-align: left;
+                font-size: 16px;
+                padding-top: 1em;
+            }
+            .title {
+                font-size: 20px;
+            }
+            .sub-title{
+                color: #A62C4A;
+                font-family: 'Cinzel';
+                font-size: 16px;
+            }
+            .description {
+                margin-left: 2em;
+                font-size: 16px;
+            }
+        }
+    
+        .target-audience {
+            margin-top: 35em;
+            .title {
+                font-size: 20px;
+            }
+            p {
+                padding-top: 1em;
+                text-align: right;
+                font-size: 16px;
+                
+            }
+        }
+    }
+}
+
 

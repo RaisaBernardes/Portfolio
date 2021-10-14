@@ -12,12 +12,11 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   line-height: 170%;
-  overflow-x: hidden;
-  background-color: #FCFCFC;
+  background-color: white;
 }
 
 .intro {
-  height: 100vh;
+  height: 50vh;
   position: relative;
 }
 
@@ -41,4 +40,273 @@ body {
 }
 //This block would show the FIRST image of the class .intro without javascript
 */
+section {
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.three-blocks {
+  background: #FCFCFC;
+}
+
+.three-blocks-container .case-study {
+  margin-bottom: 50px;
+  font-family: 'Cinzel', sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.three-blocks-container ul li {
+  background: white;
+  padding: 2em;
+  margin-bottom: 1em;
+  list-style-type: none;
+  -webkit-box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.011), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.016), 12.5px 12.5px 10px rgba(0, 0, 0, 0.02), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.024), 41.8px 41.8px 33.4px rgba(0, 0, 0, 0.029), 100px 100px 80px rgba(0, 0, 0, 0.04);
+          box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.011), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.016), 12.5px 12.5px 10px rgba(0, 0, 0, 0.02), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.024), 41.8px 41.8px 33.4px rgba(0, 0, 0, 0.029), 100px 100px 80px rgba(0, 0, 0, 0.04);
+}
+
+.three-blocks-title {
+  font-weight: bold;
+  font-size: 14px;
+  font-family: 'Cinzel', sans-serif;
+  color: #2B2B2B;
+}
+
+.three-blocks-description {
+  margin-bottom: 2em;
+  font-size: 13px;
+  color: #2B2B2B;
+}
+
+.process-image P {
+  font-family: 'Cinzel', sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  color: #2B2B2B;
+  margin-top: 10vh;
+}
+
+.process-image img {
+  width: 70%;
+  padding-top: 2em;
+}
+
+.project-background {
+  background-color: #2B2B2B;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.project-background .p-title {
+  font-family: 'Cinzel', sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-top: 3em;
+  color: #F3F3F3;
+}
+
+.project-background .p-description {
+  font-size: 13px;
+  font-weight: 100;
+  color: #F3F3F3;
+  padding-top: 4em;
+  padding-bottom: 3em;
+  text-align: center;
+}
+
+.initiation {
+  text-align: center;
+  background-color: #EFE3E6;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.initiation h1 {
+  font-family: 'Cinzel', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-top: 3em;
+}
+
+.initiation .title {
+  color: #A62C4A;
+  font-family: 'Cinzel', sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  padding-top: 2em;
+}
+
+.initiation p {
+  font-size: 13px;
+  font-weight: 100;
+  text-align: center;
+  color: #2B2B2B;
+}
+
+.initiation .product-goals {
+  padding-top: 2em;
+}
+
+.initiation .business-goals {
+  padding-top: 2em;
+}
+
+.initiation .risks-mitigations {
+  padding-top: 2em;
+}
+
+.initiation .target-audience {
+  padding-top: 2em;
+}
+
+@media only screen and (min-width: 800px) {
+  .three-blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    background-color: #F3F3F3;
+  }
+  .three-blocks-container {
+    padding-top: 3em;
+    max-width: 980px;
+    min-width: 979px;
+    width: 100%;
+    background-color: #F3F3F3;
+  }
+  .three-blocks-container ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    grid-gap: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: -5em;
+    margin-bottom: -10em;
+    padding-top: 4em;
+  }
+  .three-blocks-container ul li {
+    background: white;
+    list-style-type: none;
+    max-width: 240px;
+    width: 100%;
+  }
+  .three-blocks-container ul li .three-blocks-title {
+    padding-bottom: 1.5em;
+  }
+  .three-blocks-container ul li .three-blocks-description {
+    width: 12em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    line-height: 2em;
+  }
+  .process-image p {
+    font-family: 'Cinzel', sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #2B2B2B;
+    padding-top: 4em;
+  }
+  .process-image img {
+    width: 70%;
+    padding-top: 4em;
+  }
+  .project-background {
+    background-color: #2B2B2B;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    padding-left: 12em;
+    padding-right: 12em;
+  }
+  .project-background .p-title {
+    text-align: left;
+  }
+  .project-background .p-description {
+    text-align: left;
+  }
+  .initiation {
+    padding-left: 12em;
+    padding-right: 12em;
+  }
+  .initiation h1 {
+    font-size: 30px;
+    padding-bottom: 30px;
+  }
+  .initiation .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% auto;
+        grid-template-columns: 50% auto;
+  }
+  .initiation .line {
+    background-color: #A62C4A;
+    color: #EFE3E6;
+    height: 1px;
+  }
+  .initiation .product-goals p {
+    text-align: left;
+    font-size: 16px;
+    padding-top: 1em;
+  }
+  .initiation .product-goals .title {
+    font-size: 20px;
+  }
+  .initiation .business-goals {
+    margin-top: 10em;
+  }
+  .initiation .business-goals p {
+    text-align: right;
+    font-size: 16px;
+    padding-top: 1em;
+  }
+  .initiation .business-goals .title {
+    font-size: 20px;
+  }
+  .initiation .risks-mitigations p {
+    text-align: left;
+    font-size: 16px;
+    padding-top: 1em;
+  }
+  .initiation .risks-mitigations .title {
+    font-size: 20px;
+  }
+  .initiation .risks-mitigations .sub-title {
+    color: #A62C4A;
+    font-family: 'Cinzel';
+    font-size: 16px;
+  }
+  .initiation .risks-mitigations .description {
+    margin-left: 2em;
+    font-size: 16px;
+  }
+  .initiation .target-audience {
+    margin-top: 35em;
+  }
+  .initiation .target-audience .title {
+    font-size: 20px;
+  }
+  .initiation .target-audience p {
+    padding-top: 1em;
+    text-align: right;
+    font-size: 16px;
+  }
+}
 /*# sourceMappingURL=jointly.css.map */

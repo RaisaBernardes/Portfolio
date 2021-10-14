@@ -1,6 +1,6 @@
 const slideshowImages = document.querySelectorAll(".intro .slideshow-img"); //Storing .slideshow-img into a variable. Using querySelectorAll method in order to get all slideshow image elements.
 
-const nextImageDelay = 3000; //Defining a delay (3 secs) between each image in the slideshow.
+const nextImageDelay = 5000; //Defining a delay (3 secs) between each image in the slideshow.
 let currentImageCounter = 0; //To keed track of the currently displayed image, starting from 0. Using "let" because I'm expecting reassigment of its value
 
 //slideshowImages [currentImageCounter].style.display = "block"; //Setting the first slideshow image
