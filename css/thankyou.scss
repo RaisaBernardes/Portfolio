@@ -48,6 +48,7 @@ ul {
 }
 .nav-container {
     background-color: #161616;
+    position: relative;
     a{
         color: white;
     }
@@ -62,12 +63,11 @@ header {
         font-weight: bold;
         font-family: 'Poppins';
         font-size: large;
-        padding-left: 3.8em;
         text-decoration: none;
     }
     ul {
         display: flex;
-        padding-right: 2em;
+        
         a {
             /*Isso é para o espaçamento entre as palavras do menu darem certo*/
             display: block; 
@@ -129,32 +129,38 @@ header {
 
 //----------------------MIDDLE CONTENT------------------------
 
+.container {
+    position: relative;
+}
 
 .wrapper-content{
-    justify-content: center; //added
-    text-align: center;
-    width: 700px; 
-    margin: 0 auto 0 auto;
-    //background-color: red;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin: auto;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    padding-top: 4em;
     
     .content{
+        
         justify-content: center;
         text-align: center;
         align-items: center;
         
         h1{
-            justify-content: center; 
             font-family: 'Cinzel', sans-serif;
             font-weight: 100;
+            justify-content: center; //added
+            margin-top: 5em;
+            text-align: center;
+            font-family: 'Cinzel', sans-serif;
+            font-size: 2em;
+            color: #161616;
         }
         .button-area{
             position: relative;
-            margin-left: 0em;
             padding-top: 6em;
             
             .button{

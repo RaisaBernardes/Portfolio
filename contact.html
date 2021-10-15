@@ -12,6 +12,7 @@
     
 </head>
 <body>
+    <!--HEADER-->
     
     <div class="nav-container">
         <header>
@@ -36,42 +37,60 @@
             </nav>
         </header>
     </div>
+
+    <!--BODY CONTENT-->
     
-    <h1 class="stagger1">LET'S GET IN TOUCH</h1>
-    <p class="description stagger1">I'll be happy to hear from you!</p>
+<div class="body-content-wrapper">
+    <section class="body-content">
+        <h1 class="stagger1">LET'S GET IN TOUCH</h1>
+        <p class="description stagger1">I'll be happy to hear from you!</p>
 
-    <div class="container transition2">
-        <div class="wrapper">
-                    <form action="https://formsubmit.co/raisa.rmro@gmail.com" method="POST">
-                        <div class="dbl-field">
-                            <div class="field">
-                                <input name="Name" class="name" type="text" placeholder="Your name" required>
-                                <input name="Email" class="email" type="email" placeholder="Your email" required>
-                                <input type="hidden" name="_captcha" value="false">
-                                <input type="hidden" name="_next" value="https://raisabernardes.github.io/Portfolio/thankyou.html">
+        <div class="container transition2">
+            <div class="wrapper">
+                        <form action="https://formsubmit.co/raisa.rmro@gmail.com" method="POST">
+                            <div class="dbl-field">
+                                <div class="field">
+                                    <input name="Name" class="name" type="text" placeholder="Your name" required>
+                                    <input name="Email" class="email" type="email" placeholder="Your email" required>
+                                    <input type="hidden" name="_captcha" value="false">
+                                    <input type="hidden" name="_next" value="https://raisabernardes.github.io/Portfolio/thankyou.html">
+                                </div>
+                            
+                                <div class="message-area">
+                                    <textarea name="Message" class="message" placeholder="Your message" required></textarea>
+                                </div>
                             </div>
-                        
-                            <div class="message-area">
-                                <textarea name="Message" class="message" placeholder="Your message" required></textarea>
+                            <div class="button-area">
+                                <button class="submit-button" type="submit">Submit message</button>
                             </div>
-                        </div>
-
-                        <div class="button-area">
-                            <button class="submit-button" type="submit">Submit message</button>
-                        </div>
-                        
-                        
-                    </form>
+                        </form>
+            </div>
         </div>
-    </div>
+    </section>
+</div>
 
-    
+    <!--FOOTER-->
+<div class="footer-container">
+    <footer class="footer">
+        <div class="footer-content">
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com/in/raisa-bernardes/" target="_blank"><img src="Images/Images_footer/linkedin-icon-white.png" alt="linkedin"></a></li>
+                <li><a href="https://www.instagram.com/raisamirellarob/" target="_blank"><img src="Images/Images_footer/instagram-icon-white.png" alt="instagram"></a></li>
+                <li><a href="https://web.whatsapp.com/send?phone=5581999458630" target="_blank"><img src="Images/Images_footer/whatsapp-icon-white.png" alt="whatsapp"></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Developed by Raísa Bernardes</p>
+        </div>
+    </footer>
+</div>
+
+    <!--TRANSITION EFFECTS-->
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js" integrity="sha512-DlTk2PLUinhBupE89kHOJTt11QqbRMQVlbb26XVDvp4D1kt0fRvQJslvZnTelRJHq6yK0tIPCR7cul8+9Blz0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
     <script>
-    
     gsap.registerPlugin(ScrollTrigger);
                 var tl = gsap.timeline();
     
@@ -102,23 +121,6 @@
             })
     </script>
 
-
-<!--FOOTER-->
-<div class="footer-container">
-<footer class="footer">
-    <div class="footer-content">
-        <ul class="social-links">
-            <li><a href="https://www.linkedin.com/in/raisa-bernardes/" target="_blank"><img src="Images/Images_footer/linkedin-icon-white.png" alt="linkedin"></a></li>
-            <li><a href="https://www.instagram.com/raisamirellarob/" target="_blank"><img src="Images/Images_footer/instagram-icon-white.png" alt="instagram"></a></li>
-            <li><a href="https://web.whatsapp.com/send?phone=5581999458630" target="_blank"><img src="Images/Images_footer/whatsapp-icon-white.png" alt="whatsapp"></a></li>
-        </ul>
-    </div>
-    <div class="footer-bottom">
-        <p>Developed by Raísa Bernardes</p>
-    </div>
-</footer>
-
-</div>
 
 </body>
 </html>
